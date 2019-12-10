@@ -1,3 +1,9 @@
+/*
+File Name : app.component.ts
+Date : 12th Dec 2019
+Gives the title of the page
+ */
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +12,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'weather-app';
+  title = 'Weather Forecast';
 }

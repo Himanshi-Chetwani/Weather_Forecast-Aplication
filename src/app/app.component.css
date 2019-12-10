@@ -1,0 +1,12 @@
+/*
+File Name : app.compoenent.css
+Date : 12th Dec 2019
+Gives the CSS formatting for the header dispalyed on load
+ */
+
+h1{
+    font-size: 500%;
+    text-align: center;
+    font-family: 'Sofia', cursive;
+    color:snow;
+}

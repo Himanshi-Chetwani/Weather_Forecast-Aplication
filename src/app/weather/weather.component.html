@@ -1,0 +1,61 @@
+<!-- 
+  File Name : wather.component.html
+  Date : 12th December 2019
+  Description : Displaying the select option and the files
+ -->
+
+
+<div class="container">
+  <!-- 
+    Form that reads data
+   -->
+  <form onsubmit="return false;">
+    <div class="boxC">
+      <select #newCityField id=newCityField class="newCityField" name="newCityField" [(ngModel)]="newCity"
+        (change)="getData(newCity)">
+        <option value="329424">Rochester</option>
+        <option value="14-349727_1_AL">New York City</option>
+        <option value="350540">Philidelphia</option>
+        <option value="348308">Chicago</option>
+        <option value="348735">Boston</option>
+      </select>
+    </div>
+    <!-- Data displayed by Angular Material Design Table -->
+    <div id="chat">
+      <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="date">
+          <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
+          <mat-cell *matCellDef="let item"> {{item.Date}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="maxTemp">
+          <mat-header-cell *matHeaderCellDef> Max Temperature </mat-header-cell>
+          <mat-cell *matCellDef="let item"> {{item.Temperature.Maximum.Value}} {{item.Temperature.Maximum.Unit }}
+          </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="minTemp">
+          <mat-header-cell *matHeaderCellDef> Min Temperature </mat-header-cell>
+          <mat-cell *matCellDef="let item"> {{item.Temperature.Minimum.Value}} {{item.Temperature.Minimum.Unit}}
+          </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="rFMax">
+          <mat-header-cell *matHeaderCellDef> Real Feel Max </mat-header-cell>
+          <mat-cell *matCellDef="let item"> {{item.RealFeelTemperature.Maximum.Value}}
+            {{item.RealFeelTemperature.Maximum.Unit}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="rFMin">
+          <mat-header-cell *matHeaderCellDef> Real Feel Min </mat-header-cell>
+          <mat-cell *matCellDef="let item"> {{item.RealFeelTemperature.Minimum.Value}}
+            {{ item.RealFeelTemperature.Minimum.Unit}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="wSpeed">
+          <mat-header-cell *matHeaderCellDef> Wind Speed </mat-header-cell>
+          <mat-cell *matCellDef="let item"> {{item.Day.Wind.Speed.Value}} {{item.Day.Wind.Speed.Unit}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+    </div>
+  </form>
+</div>
+

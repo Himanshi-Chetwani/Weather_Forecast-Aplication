@@ -1,0 +1,106 @@
+/*
+File Name : weather.component.css
+Date : 12th Dec 2019
+Gives the CSS formatting for the components in weather.component.html 
+ */
+
+#submitBtn{
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+table {
+    width: 100%;
+  }
+
+  mat-cell{
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 500;
+    font-size: 20px;
+  }
+  mat-header-row{
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 550    ;
+    font-size: 25px;
+    text-align: center; 
+  }
+  
+  .newCityField {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    font-family: 'Source Code Pro', monospace; 
+    width: 25%;
+    max-width: 25%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    margin: 20px;
+    left: 50%;
+}
+.newCityField::-ms-expand {
+    display: none;
+}
+.newCityField:hover {
+    border-color: #888;
+}
+.newCityField:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.newCityField option {
+    font-weight:normal;
+    font-size: large;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+#submitBtn {
+	box-shadow:inset 0px 0px 15px 3px #2095a5;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:15px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Source Code Pro', monospace;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+    left: 50%;
+
+}
+#submitBtn:hover {
+	background:linear-gradient(to bottom, #037e9c 5%, #2e466e 100%);
+	background-color:#27a1aa;
+}
+#submitBtn:active {
+	position:relative;
+	top:1px;
+}
+ 
+
+       
+
